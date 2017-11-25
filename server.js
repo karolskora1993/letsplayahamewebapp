@@ -24,7 +24,7 @@ app.get("/api/user/:id", function(req, res) {
     name: "name",
     surname: "surname",
     age: 22,
-    sex: Female,
+    sex: "Female",
     city: "Kraków",
     sports: ["running", "road_cycling"]
   }
@@ -40,7 +40,7 @@ app.post("/api/user/register", function(req, res) {
     name: "name",
     surname: "surname",
     age: 22,
-    sex: Female,
+    sex: "Female",
     city: "Kraków",
     sports: ["running", "road_cycling"]
   }
