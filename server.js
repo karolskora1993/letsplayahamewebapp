@@ -30,7 +30,8 @@ app.get("/api/user/:id", function(req, res) {
   return res.status(200).json({
     status: 200,
     user: fetched_user
-  });
+  }
+)});
 
 app.post("/api/user/register", function(req, res) {
   var registered_user = {
