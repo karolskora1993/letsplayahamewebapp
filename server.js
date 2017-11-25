@@ -2,6 +2,8 @@ var express = require("express");
 var bodyParser = require("body-parser")
 var Client = require('pg')
 
+
+var app = express();
 app.use(bodyParser.json());
 
 const client = new Client({
@@ -11,7 +13,6 @@ const client = new Client({
 
 client.connect();
 
-var app = express();
 var server = app.listen(process.env.PORT || 8080, function () {
   console.log("App now running on port", port);
 });
