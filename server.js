@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser")
 var Client = require('pg')
-var consts = require('./app_consts.js')
 
 app.use(bodyParser.json());
 
